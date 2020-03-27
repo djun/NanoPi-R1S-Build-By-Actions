@@ -64,7 +64,7 @@ jobs:
           cd friendlywrt
           git config --local user.email "action@github.com" && git config --local user.name "GitHub Action"
           git remote add upstream https://github.com/coolsnowwolf/lede && git fetch upstream
-          git rebase 90bb1cf9c33e73de5019686b8bd495f689e675a4^ --onto upstream/master -X theirs
+          git rebase e31bc21b9514067cd0a305539ac0ef7e1bd94a13^ --onto upstream/master -X theirs
           git checkout upstream/master -- feeds.conf.default
           cd package/lean/
           rm -rf luci-theme-argon
